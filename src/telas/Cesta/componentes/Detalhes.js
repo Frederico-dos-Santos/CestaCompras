@@ -2,18 +2,16 @@ import React from 'react';
 import {View, StyleSheet, Image} from 'react-native';
 
 import Texto from '../../../componentes/Texto';
-import logo from '../../../../assets/fazendaIcon.png';
 
-export default function Detalhes(){
+export default function Detalhes({nome,logoFazenda,nomeFazenda,descricao,preco}){
     return <>
-        <Texto style={estilos.nome}>Cesta de Frutas</Texto>
+        <Texto style={estilos.nome}>{nome}</Texto>
         <View style={estilos.fazenda}>
-            <Image source={logo} style={estilos.imagemFazenda}/>
-            <Texto style={estilos.nomeFazenda}>Fazenda do Fred</Texto>
+            <Image source={logoFazenda} style={estilos.imagemFazenda}/>
+            <Texto style={estilos.nomeFazenda}>{nomeFazenda}</Texto>
         </View>
-        <Texto style={estilos.descricao}>Produtos selecionados por mim, o melhor
-        agricultor da zona leste de Belo Horizonte, diretamente para a sua cozinha</Texto>
-        <Texto style={estilos.preco}>R$400,00</Texto>
+        <Texto style={estilos.descricao}>{descricao}</Texto>
+        <Texto style={estilos.preco}>{preco}</Texto>
     </>
 }
 
