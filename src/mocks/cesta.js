@@ -9,8 +9,9 @@ const cesta = {
         logoFazenda: logo,
         nomeFazenda: "Fazenda do Fred",
         descricao: "Produtos selecionados por mim, o melhor agricultor da zona leste de Belo Horizonte, diretamente para a sua cozinha",
-        preco: "R$400,00"
-    }
+        preco: "R$400,00",
+        botao: "Comprar"
+    },
 }
 
 export default cesta;
