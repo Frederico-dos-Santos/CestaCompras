@@ -1,4 +1,10 @@
 import logo from '../../assets/fazendaIcon.png';
+import carambola from '../../assets/frutas/carambola.jpg'
+import cacau from '../../assets/frutas/cacau.jpg'
+import lichia from '../../assets/frutas/lichia.jpg'
+import maracuja from '../../assets/frutas/maracuja.jpg'
+import pitaia from '../../assets/frutas/pitaia.jpg'
+
 
 const cesta = {
     topo:{
@@ -12,6 +18,35 @@ const cesta = {
         preco: "R$400,00",
         botao: "Comprar"
     },
+    itens:{
+        titulo: "Itens da Cesta",
+        lista:[
+            {
+                nome: "Carambola",
+                imagem: carambola,
+
+            },
+            {
+                nome: "Cacau",
+                imagem: cacau,
+
+            },
+            {
+                nome: "Lichia",
+                imagem: lichia,
+
+            },
+            {
+                nome: "Maracujá",
+                imagem: maracuja,
+
+            },
+            {
+                nome: "Pitaia",
+                imagem: pitaia,
+            },
+        ]
+    }
 }
 
 export default cesta;
